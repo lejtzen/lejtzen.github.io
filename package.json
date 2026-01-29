@@ -1,0 +1,26 @@
+{
+  "name": "lejtzen.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "node dev.js",
+    "build": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lejtzen/lejtzen.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lejtzen/lejtzen.github.io/issues"
+  },
+  "homepage": "https://lejtzen.github.io",
+  "dependencies": {
+    "@swc/html": "^1.15.11",
+    "browser-sync": "^3.0.4",
+    "chokidar": "^5.0.0",
+    "markdown-wasm": "^1.2.0"
+  }
+}
