@@ -57,13 +57,13 @@
         color: rgba(255, 255, 255, 1);
         padding: 0;
         margin: 0;
+        min-height: 100svh;
+        display: flex;
+        flex-direction: column;
       }
 
       .wrap {
         overflow: hidden;
-        min-height: 100svh;
-        display: flex;
-        flex-direction: column;
       }
 
       a {
@@ -239,25 +239,25 @@
     </style>
   </head>
   <body>
+    <header>
+      <figure>
+        <img
+          src="lejtzen.webp"
+          srcset="lejtzen.webp 1x, lejtzen@2x.webp 2x"
+          width="60"
+          height="60"
+          alt="A profile picture of Vincent Lejtzén"
+          loading="eager"
+          fetchpriority="high"
+          decoding="sync"
+        />
+        <figcaption>Vincent Lejtzén 👨🏼‍💻</figcaption>
+      </figure>
+    </header>
+
+    <main>{content}</main>
+
     <div class="wrap">
-      <header>
-        <figure>
-          <img
-            src="lejtzen.webp"
-            srcset="lejtzen.webp 1x, lejtzen@2x.webp 2x"
-            width="60"
-            height="60"
-            alt="A profile picture of Vincent Lejtzén"
-            loading="eager"
-            fetchpriority="high"
-            decoding="sync"
-          />
-          <figcaption>Vincent Lejtzén 👨🏼‍💻</figcaption>
-        </figure>
-      </header>
-
-      <main>{content}</main>
-
       <footer>
         <div>Copyright © {year} Vincent Lejtzén. All rights reserved.</div>
         <div>
