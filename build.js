@@ -11,7 +11,7 @@ let result = template;
 const now = new Date();
 const props = {
   year: now.getFullYear(),
-  date: now.toISOString(),
+  date: now.toString(),
   content: parse(markdown),
 };
 
